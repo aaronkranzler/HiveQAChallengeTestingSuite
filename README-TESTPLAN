@@ -1,0 +1,60 @@
+Hive QA/SDET CHALLENGE: USER ONBOARDING TEST PLAN/TEST SUITE
+Important Info: The testing strategy I used was to compartmentalize the process by each separate page of the new user onboarding process
+Tests are divided between each page, and each "phase" concerns the specific features of each of those pages
+ALL TESTS ARE IMPLEMENTED FOR CHROME
+
+Phase 1) First page of onboarding Process
+	Test 1: Test to ensure the proper of the "Join Hive" functionality on the staging webpage
+
+
+Phase 2) Second page of onbaording process
+	Test 2.1: Test to ensure that the video on the next page works //NO AUTOMATED TEST
+	Test 2.2: Test to ensure that the "Continue" button works and takes user to next page
+
+
+Phase 3) Third Page of onboarding process
+	Test 3.1: Test to ensure that "Continue" button does not hold functionality when no input is given
+	Test 3.2: Test to ensure that "Continue" button does not hold functionality when first and last name and phone number are given, but no email or password are given
+	Test 3.3: Test to ensure that "Continue" button does not hold functionality when first and last name, phone number, and proper password are given, but no email is given
+	Test 3.4: Test to ensure that "Continue" button does not hold functionality when first and last name, phone number, and proper password are given, but improper email is given
+	Test 3.5: Test to ensure that "Continue" button does not hold functionality when first and last name, phone number, and proper email are given, but no password is given
+	Test 3.6: Test to ensure that "Continue" button does not hold functionality when first and last name, phone number, and proper email are given, but improper password is given
+	Test 3.7: Test to ensure "Add Photo" functionality works //NO AUTOMATED TEST
+	Test 3.8: Test that "Continue" button takes user to next page when all input is valid
+	Test 3.9: Test Google and Slack sign in's, given that google and slack accounts exist//NO AUTOMATED TEST
+	Test 3.10: Test that "Continue" button does not move on to next page and an error is displayed when existing email is used
+	Test 3.11: Test that "Continue" button is disabled when email and password but no other info (name and phone number) are inputted
+	Test 3.12: Test that "Continue" button does not move on to next page and an error is displayed when illegal characters are used in the first name input
+	Test 3.13: Test that "Continue" button does not move on to next page and an error is displayed when illegal characters are used in the last name input
+	Test 3.14: Tests to ensure that "Continue" button moves on to next page when it is enabled (when proper input is given)
+
+
+Phase 4) Fourth page of onboarding process
+	Test 4.1: Test to ensure that "Continue" button does not hold functionality when no organization name is inputted
+	Test 4.2: Test to ensure that "Continue" button holds functionality when organization name is inputted
+	Test 4.3: Test to ensure that all three "Organization Size" option buttons hold //No automated test
+	Test 4.4: Test to ensure that "Continue" button routes to new page when clicked
+
+
+Phase 5) Fifth page of onbaording process
+	Test 5.1: Test to ensure that "Continue" button still holds functionality with no input for the three items
+	Test 5.2: Test to ensure that "Continue" button holds functionality with input for the three items
+
+
+Phase 6) Sixth page of onboarding process
+	Test 6.1: Test to ensure that "Continue" button does not hold functionality when no input is given in the invite fields.
+	Test 6.2: Test to ensure that "Continue" button does not hold functionality when invalid input is given in the invite fields
+	Test 6.3: Test to ensure that "Continue" button holds functionality when one or more valid inputs (email address format) are inputted for the invite fields
+	Test 6.4: Test to ensure that "Continue" button routes to new page when clicked
+	Test 6.5: Test to ensure "No thanks, I'll do this later" functions properly and takes user to next page
+
+
+Phase 7) Seventh page of onboarding process
+	Test 7.1: Ensure that connections to Drive, Box, and Dropbox accounts work //NO AUTOMATED TEST
+	Test 7.2: Ensure functionality of "Finish" button in the case that the aforementioned accounts were linked //CANNOT TEST THIS, NO AUTOMATED TEST
+	Test 7.3: Ensure that "Finish" button does not hold functionality when Drive, Box, and Dropbox accounts are not linked
+	Test 7.4: Ensure functionality of "No thanks, I'll do this later" element
+
+TOOLS USED: Selenium Webdriver with Java API, Eclipse used for all development of testing scripts
+
+
